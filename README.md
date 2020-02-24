@@ -6,4 +6,4 @@ The Arlo camera is a 100 Percent Wire-Free, completely wireless, HD smart home s
 Arlo app notifies with motion alerts and clips, schedule smart home rules, and share cameras with ... Download the Arlo app and check in on your home, pets, kids, and business
 
 ### Purpose
-This is a project I am working on for practice using HTML/CSS
+Project currently working on for practice using HTML/CSS
