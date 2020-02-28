@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Arlo Inc.</title>
+    <link rel="shortcut icon" href="pictures/titleIcon.png">
+    <title>Arlo Web Portal | Devices</title>
 </head>
 
 <body>
@@ -13,15 +14,15 @@
     <header>
         <nav>
             <ul>
-                <a href=""><img src="/pictures/logo.png" alt="Arlo logo" class="logo"></a>
-                <li class="opt"><a href="" class="option"><img src="/pictures/devices.png" alt="Devices Icon"
-                            class="NavIcon ">Devices</a></li>
-                <li class="opt"><a href="" class="option"><img src="/pictures/library.png" alt="Library Icon"
-                            class="NavIcon">Library</a></li>
-                <li class="opt"><a href="" class="option"><img src="/pictures/mode.png" alt="Mode Icon"
-                            class="NavIcon">Mode</a></li>
-                <li class="opt"><a href="" class="option"><img src="/pictures/settings.png" alt="Setting Icon"
-                            class="NavIcon">Settings</a></li>
+                <a href=""><img src="pictures/logo.png" alt="Arlo logo" class="logo"></a>
+                <li class="opt"><a href="index.html" class="option devices class"><img src="pictures/devices.png"
+                            alt="Devices Icon" class="NavIcon " id="devices">Devices</a></li>
+                <li class="opt"><a href="library.html" class="option library"><img src="pictures/library.png"
+                            alt="Library Icon" class="NavIcon" id="library">Library</a></li>
+                <li class="opt"><a href="mode.html" class="option mode"><img src="pictures/mode.png" alt="Mode Icon"
+                            class="NavIcon" id="mode">Mode</a></li>
+                <li class="opt"><a href="settings.html" class="option settings"><img src="pictures/settings.png"
+                            alt="Setting Icon" class="NavIcon" id="settings">Settings</a></li>
 
                 <li class="Alarmli"> <a href="" class="AlarmIcon"><svg xmlns="http://www.w3.org/2000/svg" width="33"
                             height="33" viewBox="0 0 33 33" class="svg1">
@@ -49,24 +50,194 @@
             </ul>
         </nav>
     </header>
-</body>
 
 
+    <!-- **** NAV BAR **** **** NAV BAR **** **** NAV BAR **** **** NAV BAR **** **** NAV BAR **** -->
 
-<div class="navbar">
 
-    <div class="dropdown">
-        <button class="dropbtn">
-            <i class="fa fa-caret-down"></i>
-            <img src="/pictures/userB.png" alt="LogOut Icon" class="LogIcon">
-        </button>
-        <div class="dropdown-content">
-            <a class="profile" href="#">Profile</a>
-            <a class="profile" href="#">Change Email Address</a>
-            <a class="profile" href="#">Change Password</a>
-            <a href="" class="Logout">Log Out<img src="/pictures/logout.svg" alt="LogOut Icon" class="LogIcon"></a>
+    <div class="navbar">
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-caret-down"></i>
+                <img src="pictures/userB.png" alt="LogOut Icon" class="LogIcon">
+            </button>
+            <div class="dropdown-content">
+                <a class="profile" href="#">Profile</a>
+                <a class="profile" href="#">Change Email Address</a>
+                <a class="profile" href="#">Change Password</a>
+                <a href="" class="Logout">Log Out<img src="pictures/logout.svg" alt="LogOut Icon" class="LogIcon"></a>
+            </div>
         </div>
     </div>
-</div>
+
+
+    <!-- **** CAMERA FEED **** **** CAMERA FEED **** **** CAMERA FEED **** **** CAMERA FEED **** -->
+
+
+    <div class="cameras">
+
+        <section class="row1">
+
+            <div class="camDiv" id="garage">
+                <div class="camNav">
+                    <svg class="NotiSvg" id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 30 30">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="15" cy="15" r="15" fill="#3ed19f" />
+                        <text id="_9" data-name="9" transform="translate(11 21)" fill="#fff" font-size="15"
+                            font-family="Poppins-Bold, Poppins" font-weight="700">
+                            <tspan x="0" y="0">9</tspan>
+                        </text>
+                    </svg>
+                    Garage
+                    <img src="/pictures/history.png" class="history" ><img src="/pictures/settings.png" class="navSettingsIcon">
+                </div>
+                <div class="camFeed"><a href="">
+                        <div class="overlayGarage"><a href=""><img src="/pictures/play.png" alt="" class="play"></a></div><img
+                            class="camPics" src="pictures/garage.png" alt="">
+                    </a>
+                    <img class="detections" src="/pictures/detections.png" alt=""></div>
+            </div>
+
+            <div class="camDiv" id="Main Door">
+                <div class="camNav">
+                    <svg class="NotiSvg" id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 30 30">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="15" cy="15" r="15" fill="#3ed19f" />
+                        <text id="_9" data-name="9" transform="translate(11 21)" fill="#fff" font-size="15"
+                            font-family="Poppins-Bold, Poppins" font-weight="700">
+                            <tspan x="0" y="0">9</tspan>
+                        </text>
+                    </svg>
+                    Main Door
+                    <img src="/pictures/history.png" class="history" ><img src="/pictures/settings.png" class="navSettingsIcon">
+                </div>
+                <div class="camFeed"><a href="">
+                        <div class="overlaymDoor"><a href=""><img src="/pictures/play.png" alt="" class="play"></a></div><img
+                            class="camPics" src="pictures/mDoor.png" alt="">
+                    </a>
+                    <img class="detections" src="/pictures/detections.png" alt=""></div>
+            </div>
+
+            <div class="camDiv BackDoor" id="BackDoor">
+                <div class="camNav">
+                    <svg class="NotiSvg" id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 30 30">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="15" cy="15" r="15" fill="#3ed19f" />
+                        <text id="_9" data-name="9" transform="translate(11 21)" fill="#fff" font-size="15"
+                            font-family="Poppins-Bold, Poppins" font-weight="700">
+                            <tspan x="0" y="0">9</tspan>
+                        </text>
+                    </svg>
+                    Back Door
+                    <img src="/pictures/history.png" class="history" ><img src="/pictures/settings.png" class="navSettingsIcon">
+                </div>
+                <div class="camFeed"><a href="">
+                        <div class="overlaybDoor"><a href=""><img src="/pictures/play.png" alt="" class="play"></a></div><img
+                            class="camPics" src="pictures/bDoor.png" alt="">
+                    </a>
+                    <img class="detections" src="/pictures/detections.png" alt=""></div>
+            </div>
+        </section>
+
+        <section class="row2">
+            <div class="camDiv" id="Backyard">
+                <div class="camNav">
+                    <svg class="NotiSvg" id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 30 30">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="15" cy="15" r="15" fill="#3ed19f" />
+                        <text id="_9" data-name="9" transform="translate(11 21)" fill="#fff" font-size="15"
+                            font-family="Poppins-Bold, Poppins" font-weight="700">
+                            <tspan x="0" y="0">9</tspan>
+                        </text>
+                    </svg>
+                    Backyard
+                    <img src="/pictures/history.png" class="history" ><img src="/pictures/settings.png" class="navSettingsIcon">
+                </div>
+                <div class="camFeed"><a href="">
+                        <div class="overlayBackyard"><a href=""><img src="/pictures/play.png" alt="" class="play"></a></div><img
+                            class="camPics" src="pictures/backyard.png" alt="">
+                    </a>
+                    <img class="detections" src="/pictures/detections.png" alt=""></div>
+            </div>
+            <div class="camDiv" id="Pool">
+                <div class="camNav">
+                    <svg class="NotiSvg" id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 30 30">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="15" cy="15" r="15" fill="#3ed19f" />
+                        <text id="_9" data-name="9" transform="translate(11 21)" fill="#fff" font-size="15"
+                            font-family="Poppins-Bold, Poppins" font-weight="700">
+                            <tspan x="0" y="0">9</tspan>
+                        </text>
+                    </svg>
+                    Swimming Pool
+                    <img src="/pictures/history.png" class="history" ><img src="/pictures/settings.png" class="navSettingsIcon">
+                </div>
+                <div class="camFeed"><a href="">
+                        <div class="overlayPool"><a href=""><img src="/pictures/play.png" alt="" class="play"></a></div><img
+                            class="camPics" src="pictures/pool.png" alt="">
+                    </a>
+                    <img class="detections" src="/pictures/detections.png" alt=""></div>
+            </div>
+            <div class="camDiv Garden" id="Garden">
+                <div class="camNav">
+                    <svg class="NotiSvg" id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 30 30">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="15" cy="15" r="15" fill="#3ed19f" />
+                        <text id="_9" data-name="9" transform="translate(11 21)" fill="#fff" font-size="15"
+                            font-family="Poppins-Bold, Poppins" font-weight="700">
+                            <tspan x="0" y="0">9</tspan>
+                        </text>
+                    </svg>
+                    Garden
+                    <img src="/pictures/history.png" class="history" ><img src="/pictures/settings.png" class="navSettingsIcon">
+                </div>
+                <div class="camFeed"><a href="">
+                        <div class="overlayGarden"><a href=""><img src="/pictures/play.png" alt="" class="play"></a></div><img
+                            class="camPics" src="pictures/garden.png" alt="">
+                    </a>
+                    <img class="detections" src="/pictures/detections.png" alt=""></div>
+            </div>
+        </section>
+
+        <!-- <a href=""></a> -->
+        <button type="button" class="button"><img src="/pictures/plus.png" class="plus">Add New Device</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.9.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+
+
+</body>
+
 
 </html>

@@ -12,6 +12,7 @@
 
 body{
     background-color: #ececec; 
+
 }
 
 
@@ -19,6 +20,7 @@ nav{
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   align-items: center;
+  box-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.13);
 }
 
 .logo{
@@ -88,13 +90,19 @@ nav a{
   transition-duration: 400ss;
 }
 
+nav .opt .devices{
+  border-bottom: solid #33CF99;
+}
+
+
+
 nav .opt a:hover{
   border-bottom: solid #33CF99;
   background-color: #f1f1f1;
 }
 
 
-/* >>>>>>>> DROPDOWN DROPDOWN DROPDOWN <<<<<<<<< */
+/* >>>>>>>> **** DROPDOWN **** DROPDOWN **** DROPDOWN **** <<<<<<<<< */
 
 /* Links inside the navbar */
 .navbar{
@@ -215,5 +223,374 @@ nav .opt a:hover{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  
+}
+
+
+/***** CAMERA FEED **** **** CAMERA FEED **** **** CAMERA FEED **** **** CAMERA FEED *****/
+
+
+.cameras{
+  position: absolute;
+  /* right: 50%;
+  left: 50%; */
+
+  bottom: -220px;
+}
+
+.camNav{
+  cursor: default;
+  position: relative;
+  border-style: transparent;
+  border-radius: 100px 100px 100px 100px;
+  text-align: center;
+  box-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.13);
+  background-color: white;
+  width: 350px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 8.5px;
+}
+
+/* Issue with aligning horizontally and vertically */
+
+.camNav .NotiSvg{
+  position: absolute;
+  bottom: 3.5px;
+  left: 5px;
+
+}
+
+.history{
+  position: absolute;
+  height: 19px;
+  bottom: 9px;
+  right: 45px;
+}
+
+.navSettingsIcon{
+  position: absolute;
+  height: 19px;
+  bottom: 9px;
+  right: 15px;
+}
+
+.camFeed{
+  margin-top: 12px;
+  width: 350px;
+  height: 255px;
+  border-style: transparent;
+  border-radius: 17px 17px 25px 25px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.13);
+}
+
+.cameras{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.camPics{
+  width: 350px;
+  border-radius: 15px;
+
+}
+
+
+.camDiv{
+    align-content: center;
+    margin: 0 70px 0px 0px;
+}
+
+.BackDoor{
+  margin: 0 0px 0px 0px;
+}
+
+.Garden{
+  margin: 0 0px 0px 0px;
+}
+
+
+
+.row1 {
+  display: inline-flex;  
+}
+
+.row2{
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+.detections{
+  height: 20px;
+}
+
+
+/* **** Garage Overlay **** **** Garage Overlay **** **** Garage Overlay **** */
+
+.overlayGarage {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity:0;
+  margin-top: 16px;
+  width: 350px;
+  height: 223px;
+  transition: .5s ease;
+  border-style: transparent;
+  border-radius: 18px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+
+.camFeed:hover .overlayGarage{
+  opacity: 0.6;
+}
+
+
+.play{                              
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 83px;
+  opacity: 1;
+  height: 50px;
+}
+
+.overlayGarage:hover .play{  
+  opacity: 1;
+  
+}
+
+
+/* **** Main Door Overlay **** **** Main Door Overlay **** **** Main Door Overlay **** */
+
+.overlaymDoor {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 35.3%;
+  right: 0;
+  opacity:0;
+  margin-top: 15px;
+  width: 350px;
+  height: 223px;
+  transition: .5s ease;
+  border-style: transparent;
+  border-radius: 18px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+.camFeed:hover .overlaymDoor{
+  opacity: 0.6;
+}
+
+.play{                              
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 83px;
+  opacity: 1;
+  height: 50px;
+}
+
+.overlaymDoor:hover .play{  
+  opacity: 1;
+  
+}
+
+
+/* **** Back Door Overlay **** **** Back Door Overlay **** **** Back Door Overlay **** */
+
+.overlaybDoor {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 70.6%;
+  right: 0;
+  opacity:0;
+  margin-top: 15px;
+  width: 350px;
+  height: 223px;
+  transition: .5s ease;
+  border-style: transparent;
+  border-radius: 18px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+.camFeed:hover .overlaybDoor{
+  opacity: 0.6;
+}
+
+.play{                              
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 83px;
+  opacity: 1;
+  height: 50px;
+}
+
+.overlaybDoor:hover .play{  
+  opacity: 1;
+  
+}
+
+
+/* Overlay issue (abosulte div restricted moving vertically  */
+/* **** Backyard Overlay **** **** Backyard Overlay **** **** Backyard Overlay **** */
+
+.row2 .overlayBackyard {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity:0;
+  margin-top: 23.95em;
+  width: 350px;
+  height: 223px;
+  transition: .5s ease;
+  border-style: transparent;
+  border-radius: 18px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+.camFeed:hover .overlayBackyard{
+  opacity: 0.6;
+}
+
+.play{                              
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 83px;
+  opacity: 1;
+  height: 50px;
+}
+
+.overlaymDoor:hover .play{  
+  opacity: 1;
+  
+}
+
+
+/* ****  Swimming Pool Overlay **** ****  Swimming Pool Overlay **** ****  Swimming Pool Overlay **** */
+
+.overlayPool {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35.3%;
+  right: 0;
+  opacity:0;
+  margin-top: 23.95em;
+  width: 350px;
+  height: 223px;
+  transition: .5s ease;
+  border-style: transparent;
+  border-radius: 18px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+.camFeed:hover .overlayPool{
+  opacity: 0.6;
+}
+
+.play{                              
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 83px;
+  opacity: 1;
+  height: 50px;
+}
+
+.overlayPool:hover .play{  
+  opacity: 1;
+  
+}
+
+
+/* **** Garden Overlay **** **** Garden Overlay **** **** Garden Overlay **** */
+
+.overlayGarden {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 70.6%;
+  right: 0;
+  opacity:0;
+  margin-top: 23.95em;
+  width: 350px;
+  height: 223px;
+  transition: .5s ease;
+  border-style: transparent;
+  border-radius: 18px;
+  background-color: rgb(17, 17, 17);
+}
+
+
+.camFeed:hover .overlayGarden{
+  opacity: 0.6;
+}
+
+.play{                              
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 83px;
+  opacity: 1;
+  height: 50px;
+}
+
+.overlayGarden:hover .play{  
+  opacity: 1;
+}
+
+.cameras{
+  overflow: visible;
+}
+
+.button{
+  cursor: pointer;
+  margin: 15px;
+  padding: 7px 25px 7px 45px;
+  position: fixed;
+  top: 107%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+
+  border-radius: 100px;
+  border: transparent;
+  box-shadow: 0.5px 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.plus{
+  margin-left: 15px;
+  
+  height: 15px;
+  text-align: center;
+  position: fixed;
+  top:50%;
+  left: 6%;
+  transform: translate(-50%, -50%);
   
 }
