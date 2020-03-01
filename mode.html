@@ -1,12 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="#">
+    <link rel="shortcut icon" href="pictures/titleIcon.png">
+    <title>Arlo Web Portal | Mode</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            color: rgb(0, 0, 0);
+        }
+
+        body {
+            background-color: #ececec;
+
+        }
+
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+            align-items: center;
+            box-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.13);
+        }
+
+        .logo {
+            width: 65px;
+            height: auto;
+            margin: 15px 0px 10px 15px;
+        }
+
+
+
+        nav li {
+            display: inline;
+            position: relative;
+            left: 7em;
+            top: -17px;
+            margin: 0px 35px;
+        }
+
+        .NavIcon {
+            margin: 0 15px 0 0;
+            height: 20px;
+            top: 4px;
+            position: relative;
+        }
+
+
+        nav a {
+            font-family: 'Poppins';
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+
+        .AlarmIcon {
+            position: relative;
+            height: 35px;
+            top: 10px;
+
+        }
+
+        .svg1 .cls-1:hover {
+            fill: #ed3131;
+            transition-duration: 300ms;
+        }
+
+
+
+        .Logout {
+            font-family: 'Poppins:500';
+            font-weight: bold;
+            color: rgb(31, 31, 31);
+            padding: 5px 17px;
+
+        }
+
+        .LogIcon {
+            height: 14px;
+            position: relative;
+            top: 1.5px;
+        }
+
+
+        .option {
+            padding: 18px 25px 15px 25px;
+            border-bottom: 4px;
+            transition-duration: 400ss;
+        }
+
+        nav .opt .mode {
+            border-bottom: solid #33CF99;
+        }
+
+
+
+        nav .opt a:hover {
+            border-bottom: solid #33CF99;
+            background-color: #f1f1f1;
+        }
+
+
+        /* >>>>>>>> **** DROPDOWN **** DROPDOWN **** DROPDOWN **** <<<<<<<<< */
+
+        /* Links inside the navbar */
+        .navbar {
+            position: relative;
+            right: 5em;
+            top: -3.89em;
+            float: right;
+
+        }
+
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            border: 1px black;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+        }
+
+
+        /* The dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+
+            border: none;
+            outline: none;
+            color: white;
+            /* border-radius: 100px 100px 100px 100px; */
+            padding: 4px 20px;
+            background-color: rgba(0, 0, 0, 0);
+
+
+            margin: 0;
+            /* Important for vertical align on mobile phones */
+        }
+
+        .dropbtn img {
+            position: relative;
+            top: 2px;
+            height: 30px;
+            width: auto;
+            margin: 10px;
+
+        }
+
+
+
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(219, 219, 219);
+            /* background: transparent; */
+            transition-duration: 400ms;
+            transition-property: all;
+
+        }
+
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: -4em;
+            bottom: -11.5em;
+            background-color: #fdfdfd;
+            min-width: 240px;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.137);
+            transition-duration: 700ms;
+            transition-property: all;
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            font-size: 15px;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            border: 2px;
+        }
+
+        .dropdown-content .LogIcon {
+            margin: 0 0 0 10px;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content .profile:hover {
+            background-color: #33CF99;
+            color: white;
+            transition-duration: 150ms;
+
+            box-shadow: inset 0px 0px 0px 2px rgb(90, 206, 167);
+            box-sizing: border-box;
+        }
+
+        .dropdown-content .Logout:hover {
+            background-color: rgb(36, 36, 36);
+            color: white;
+            transition-duration: 100ms;
+
+            box-shadow: inset 0px 0px 0px 2px rgb(87, 87, 87);
+            box-sizing: border-box;
+        }
+
+        .dropdown-content .LogIcon a :hover {
+            background-color: black;
+
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+    </style>
 </head>
+
 <body>
-    
-    tba
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><img src="pictures/logo.png" alt="Arlo logo" class="logo"></a>
+                <li class="opt"><a href="index.html" class="option devices class"><img src="pictures/devices.png"
+                            alt="Devices Icon" class="NavIcon " id="devices">Devices</a></li>
+                <li class="opt"><a href="library.html" class="option library"><img src="pictures/library.png"
+                            alt="Library Icon" class="NavIcon" id="library">Library</a></li>
+                <li class="opt"><a href="mode.html" class="option mode"><img src="pictures/mode.png" alt="Mode Icon"
+                            class="NavIcon" id="mode">Mode</a></li>
+                <li class="opt"><a href="settings.html" class="option settings"><img src="pictures/settings.png"
+                            alt="Setting Icon" class="NavIcon" id="settings">Settings</a></li>
+
+                <li class="Alarmli"> <a href="" class="AlarmIcon"><svg xmlns="http://www.w3.org/2000/svg" width="33"
+                            height="33" viewBox="0 0 33 33" class="svg1">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #33CF99;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="bell" transform="translate(-810 -5)">
+                                <rect id="red_bck" data-name="red bck" class="cls-1" width="33" height="33" rx="16"
+                                    transform="translate(810 5)" />
+                                <path id="bell-solid" class="cls-2"
+                                    d="M7.5,17.143A2.142,2.142,0,0,0,9.641,15H5.357A2.142,2.142,0,0,0,7.5,17.143Zm7.212-5.013c-.647-.7-1.857-1.741-1.857-5.166a5.287,5.287,0,0,0-4.284-5.2v-.7a1.071,1.071,0,1,0-2.142,0v.7a5.287,5.287,0,0,0-4.284,5.2c0,3.425-1.21,4.471-1.857,5.166A1.046,1.046,0,0,0,0,12.857a1.072,1.072,0,0,0,1.075,1.071h12.85A1.072,1.072,0,0,0,15,12.857,1.046,1.046,0,0,0,14.711,12.13Z"
+                                    transform="translate(819.001 13)" />
+                            </g>
+                        </svg></a></li>
+                <!-- <li class="Logout"><a href=""><img src="/pictures/logout.svg" alt="LogOut Icon" class="LogIcon"></a> -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- **** DROPDOWN **** -->
+
+    <div class="navbar">
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-caret-down"></i>
+                <img src="pictures/userB.png" alt="LogOut Icon" class="LogIcon">
+            </button>
+            <div class="dropdown-content">
+                <a class="profile" href="#">Profile</a>
+                <a class="profile" href="#">Change Email Address</a>
+                <a class="profile" href="#">Change Password</a>
+                <a href="login.html" class="Logout">Log Out<img src="pictures/logout.svg" alt="LogOut Icon" class="LogIcon"></a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -49,7 +50,7 @@ nav li{
 
 nav a{
   font-family: 'Poppins';
-  font-weight: bolder;
+  font-weight: 500;
   text-decoration: none;
   font-size: 17px;
 }
@@ -577,10 +578,19 @@ nav .opt a:hover{
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: scroll;
+  background-color: #ffffff;
+  font-size: 12px;
 
   border-radius: 100px;
   border: transparent;
   box-shadow: 0.5px 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.button a:hover{
+
+  transition: .3s ease;
+  letter-spacing: .5px;
+  
 }
 
 .plus{

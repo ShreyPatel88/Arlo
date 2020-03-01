@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <link rel="shortcut icon" href="pictures/titleIcon.png">
+    <title>Arlo Web Portal | Log In</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            color: white;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        .logo {
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 23%;
+            left: 52%;
+            height: 120px;
+        }
+
+        .login {
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 44.5%;
+            left: 50%;
+
+            font-family: 'Poppins';
+        }
+
+        .email {
+            position: relative;
+            display: block;
+
+            padding: 8px;
+            width: 350px;
+            color: rgb(0, 0, 0);
+            margin: 20px;
+            font-size: 1em;
+            font-family: 'Poppins';
+            position: relative;
+            align-items: center;
+            text-align: center;
+            background-color: #d9ffe9;
+            border-radius: 100px 100px 100px 100px;
+            border-width: 0;
+            outline: none;
+        }
+
+        .email:focus {
+            box-shadow: 0 0 0 2px black;
+        }
+
+        .password {
+            position: relative;
+            display: block;
+
+            padding: 8px;
+            width: 350px;
+            color: rgb(0, 0, 0);
+            margin: 20px;
+            font-size: 1em;
+            font-family: 'Poppins';
+            align-items: center;
+            text-align: center;
+            background-color: #d9ffe9;
+            border-radius: 100px 100px 100px 100px;
+            border-width: 0;
+            outline: none;
+        }
+
+        .password:focus {
+            box-shadow: 0 0 0 2px black;
+        }
+
+        .button a{
+            z-index: 2;
+            text-decoration: none;
+            align-items: center;
+            text-align: center;
+            border-width: 1.5px;
+            padding: 5px 45px;
+            border-style: none;
+            border-radius: 100px 100px 100px 100px;
+            color: white;
+            background-color: #33CF99;
+            margin-top: 26px;
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 52%;
+            left: 50%;
+
+            transition: .5s ease;
+            transition-property: all;
+
+            font-family: 'Poppins';
+            font-weight: 500;
+        }
+
+        
+
+        .button-accent a:hover {
+            background-color: black;
+            
+        }
+
+        .forgotPass a{
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 59%;
+            left: 50%;
+
+            font-family: 'Poppins';
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: .9em;
+            color: rgb(0, 0, 0);;
+            transition: .3s ease;
+        }
+
+        .forgotPass a:hover{
+            color: red;
+        }
+        
+        .create a{
+
+            z-index: 2;
+            text-decoration: none;
+            align-items: center;
+            text-align: center;
+            border-width: 1.5px;
+            padding: 7px 25px;
+            border-style: none;
+            border-color: black;
+            border-radius: 100px 100px 100px 100px;
+            color: #000000;
+            margin-top: 25px;
+            background-color: #ebebeb;
+
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 66%;
+            left: 50%;
+
+            
+            transition: .5s ease;
+            transition-property: all;
+            font-size: 15px;
+            font-family: 'Poppins';
+            font-weight: 450;
+            transform: 0.1s ease-out;
+        }
+
+        .create :hover{
+            padding: 7px 30px;
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <img src="pictures/logo.png" alt="Arlo logo" class="logo">
+    <div class="login">
+
+        <input required type="email" name="email" placeholder="Email" class="email">
+        <input required type="password" name="password" placeholder="Password" class="password">
+    </div>
+
+    <div class="button button-accent"><a href="index.html">Login</a></div>
+    <div class="forgotPass"><a href="" >Forgot Password?</a></div>
+
+    <div class="create"><a href="#">Create Account</a></div>
+
+</body>
+
+</html>
