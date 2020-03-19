@@ -18,6 +18,7 @@ body{
 
 
 nav{
+  
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   align-items: center;
@@ -33,6 +34,7 @@ nav{
 
 
 nav li{
+  
     display: inline;
     position: relative;
     left: 7em;
@@ -49,7 +51,7 @@ nav li{
 
 
 nav a{
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   text-decoration: none;
   font-size: 17px;
@@ -71,11 +73,11 @@ nav a{
 
 
 .Logout{
-  font-family: 'Poppins:500';
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: rgb(31, 31, 31);
   padding: 5px 17px;
-  
+  text-transform: uppercase;
 }
 
 .LogIcon{
@@ -111,11 +113,11 @@ nav .opt a:hover{
   right: 5em;
   top: -3.89em;
   float: right;
- 
 }
 
 
 .navbar a {
+  font-family: 'Poppins', sans-serif;
   float: left;
   font-size: 16px;
   border: 1px black;
@@ -235,11 +237,13 @@ nav .opt a:hover{
   position: absolute;
   /* right: 50%;
   left: 50%; */
-
+  font-family: 'Poppins', sans-serif;
   bottom: -220px;
 }
 
 .camNav{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   cursor: default;
   position: relative;
   border-style: transparent;
@@ -269,6 +273,10 @@ nav .opt a:hover{
   right: 45px;
 }
 
+.history :hover{
+  box-shadow: black;
+}
+
 .navSettingsIcon{
   position: absolute;
   height: 19px;
@@ -288,8 +296,8 @@ nav .opt a:hover{
 }
 
 .cameras{
-  position: fixed;
-  top: 50%;
+  position: fixed;  
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -570,6 +578,8 @@ nav .opt a:hover{
 }
 
 .button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   cursor: pointer;
   margin: 15px;
   padding: 7px 25px 7px 45px;
@@ -602,5 +612,44 @@ nav .opt a:hover{
   top:50%;
   left: 6%;
   transform: translate(-50%, -50%);
+  
+}
+
+
+@media only screen and (max-width:1024px){
+
+  .option{
+    padding: 18px 10px 15px 10px;
+  }
+
+  .logo{
+    width: 60px;
+    margin: 15px 0px 10px 10px;
+  }
+
+
+nav li{
+    left: 3em;
+    margin: 0px 23px; 
+}
+
+
+.cameras{
+  transform: scale(0.8, 0.8);
+  position: absolute;
+  margin: 0;
+  top: 0%;
+  left: -5.3em;
+
+
+}
+
+.navbar{
+  right: 1em; 
+}
+
+.button{
+  top: 73%;
+}
   
 }

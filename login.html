@@ -10,6 +10,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
         * {
             font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
@@ -22,6 +23,12 @@
 
         body {
             background-color: #ffffff;
+        }
+
+        .wrapper {
+            width: 200px;
+            background-color: #643737;
+            
         }
 
         .logo {
@@ -88,7 +95,7 @@
             box-shadow: 0 0 0 2px black;
         }
 
-        .button a{
+        .button a {
             z-index: 2;
             text-decoration: none;
             align-items: center;
@@ -114,14 +121,14 @@
             font-weight: 500;
         }
 
-        
+
 
         .button-accent a:hover {
             background-color: black;
-            
+
         }
 
-        .forgotPass a{
+        .forgotPass a {
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             position: absolute;
@@ -132,16 +139,16 @@
             margin-top: 15px;
             text-decoration: none;
             font-size: .9em;
-            color: rgb(0, 0, 0);;
+            color: rgb(0, 0, 0);
+            ;
             transition: .3s ease;
         }
 
-        .forgotPass a:hover{
+        .forgotPass a:hover {
             color: red;
         }
-        
-        .create a{
 
+        .create a {
             z-index: 2;
             text-decoration: none;
             align-items: center;
@@ -161,7 +168,7 @@
             top: 66%;
             left: 50%;
 
-            
+
             transition: .5s ease;
             transition-property: all;
             font-size: 15px;
@@ -170,28 +177,32 @@
             transform: 0.1s ease-out;
         }
 
-        .create :hover{
+        .create :hover {
             padding: 7px 30px;
             color: rgb(255, 255, 255);
             background-color: #000000;
         }
+
+       
 
     </style>
 </head>
 
 <body>
 
-    <img src="pictures/logo.png" alt="Arlo logo" class="logo">
-    <div class="login">
+    <section class="wrapper">
+        <img src="pictures/logo.png" alt="Arlo logo" class="logo">
+        <div class="login">
 
-        <input required type="email" name="email" placeholder="Email" class="email">
-        <input required type="password" name="password" placeholder="Password" class="password">
-    </div>
+            <input required type="email" name="email" placeholder="Email" class="email">
+            <input required type="password" name="password" placeholder="Password" class="password">
+        </div>
 
-    <div class="button button-accent"><a href="index.html">Login</a></div>
-    <div class="forgotPass"><a href="" >Forgot Password?</a></div>
+        <div class="button button-accent"><a href="index.html">Login</a></div>
+        <div class="forgotPass"><a href="">Forgot Password?</a></div>
 
-    <div class="create"><a href="#">Create Account</a></div>
+        <div class="create"><a href="#">Create Account</a></div>
+    </section>
 
 </body>
 
