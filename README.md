@@ -8,4 +8,4 @@ Arlo app notifies with motion alerts and clips, schedule smart home rules, and s
 ### Purpose
 Project currently working on for practice using HTML/CSS
 
-Website: https://shreypatel88.github.io/Arlo/
+>Website: https://shreypatel88.github.io/Arlo/
